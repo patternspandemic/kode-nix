@@ -15,7 +15,9 @@ self: super:
   #koremake
   #kraffiti
   #krafix
-      
+
+  libkorec = super.callPackage /home/pattern/repos/KoreC { };
+
   #krom = super.callPackage ./pkgs/krom { };
   #v8
   
