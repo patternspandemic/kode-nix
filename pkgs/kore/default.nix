@@ -7,8 +7,8 @@ stdenv.mkDerivation {
     fetchSubmodules = true;
     owner = "kode";
     repo = "kore";
-    rev = "e94543a61d1f8fc8d90b2bafd2ed11434b0608c3";
-    sha256 = "1rzhd9bgh13p8jmhx60yk2bnza9zcfiaa81i9bni4s4bhjgp1bdb";
+    rev = "94bf2f2bba842f96296849312fb53e9aabc797cc";
+    sha256 = "1v1bgfind7pjcrkwwmbhamv9fwcsqlc6wr30imrsqs1irjjidvdh";
   };
 
   installPhase = ''
@@ -42,7 +42,7 @@ stdenv.mkDerivation {
     #   for destFile, but it expects the mode to be read write, whereas
     #   all regular files in the nix store are made read only.
     #   (33188 is 100644 octal, the required mode)
-    substituteInPlace $out/Tools/koremake/node_modules/fs-extra/lib/copy-sync/copy-file-sync.js --replace "stat.mode" "33188"
+    substituteInPlace $out/Tools/koremake/node_modules/fs-extra/lib/copy/copy-file-sync.js --replace "stat.mode" "33188"
   '';
 
   meta = with stdenv.lib; {
