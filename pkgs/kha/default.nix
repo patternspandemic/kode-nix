@@ -7,8 +7,8 @@ stdenv.mkDerivation {
     fetchSubmodules = true;
     owner = "kode";
     repo = "kha";
-    rev = "907ac4fbc0d073e94ecf1c5cd38a33ade594e8e5";
-    sha256 = "0fzykgcz2g0db2ylvxbdwcf1fqsr7ac3x7bnd0dg8054xmkhlpkq";
+    rev = "fab7c1422ba39a433bc3876e3ec4e48d49ce7304";
+    sha256 = "1zxrzvlvhpkqw4kbriyh2i8awr71sah9h3nsz7d0r1r44iqb54br";
   };
 
   installPhase = ''
